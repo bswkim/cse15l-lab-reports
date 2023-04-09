@@ -66,7 +66,7 @@ When you see this screen, you are done with your set up.
 
 You will see something like: 
 
-![image](auth.png)
+![image](authauth.png)
 
 Type "yes" to continue connecting. 
 
