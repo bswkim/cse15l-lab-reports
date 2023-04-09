@@ -76,7 +76,7 @@ Type "yes" to continue connecting.
 ![image](password.png)
 
 # Try Some Commands 
-> **You are now logged in. Now what?**
+> **You are logged in. Now what?**
 
 Once you have successfully authenticated, you will be logged into the remote server's command line interface. You can now execute commands on the remote server as if you were physically present.
 
