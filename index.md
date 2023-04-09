@@ -34,7 +34,7 @@ When you see this screen, you are done with your set up.
   **Step 1.1: Find your username**
   
   Go to this link --> [here](https://sdacs.ucsd.edu/~icc/index.php) <-- 
-  ![image]()
+  ![image](accountlookup.png)
   In this link, you will find your CSE15L course specific account username.
   
   **Step 1.2: Reset your password**
@@ -62,16 +62,18 @@ When you see this screen, you are done with your set up.
    ```
 
 ## Step 3: 
-> **If you are using a password to connect to the remote server, enter it when prompted.**
+> **If this is your first time connecting to the remote server, you may be prompted to verify the server's authenticity.**
 
-You will see 
+You will see something like: 
 
-![image]()
+![image](auth.png)
 
 Type "yes" to continue connecting. 
 
 ## Step 4: 
-> **If this is your first time connecting to the remote server, you may be prompted to verify the server's authenticity.**
+> **If you are using a password to connect to the remote server, enter it when prompted.**
+
+![image](password.png)
 
 # Try Some Commands 
 > **You are now logged in. Now what?**
@@ -86,21 +88,20 @@ Here are some specific useful commands to try:
 3. ls -lat
 
 The ls command is a list command. Here, it will list all the contents in the lat directory. 
-![image]()
+![image](lslat.png)
 
 4. ls -a
 
 Similarly, it will list all the contents in the a directory. 
-![image]()
+![image](lsa.png)
 
-5. ls <directory> where <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, where the abc is one of the other group members’ username
-6. cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/
-7. cat /home/linux/ieng6/cs15lsp23/public/hello.txt
+5. cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/
+6. cat /home/linux/ieng6/cs15lsp23/public/hello.txt
 
 If there is no such directory, it will show something like: 
-![image]()
+![image](notdir.png)
 If it is a directory, it will show something like: 
-![image]()
+![image](isdir.png)
  
 ## To disconnect from the remote server, simply type "exit" or "logout" in the terminal.
 
