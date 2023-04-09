@@ -12,17 +12,17 @@
 First, go to the Visual Studio Code website --> [here](https://code.visualstudio.com/)
 
 **Step 2**
-![Image](imageName.png)
+![Image](downloadpage.png)
 
 Go to the download section, and install that matches your computer. 
 
 **Step 3**
-![Image](imageName.png)
+![Image](startpage.png)
 
 When you are done, you will see this screen. Take your time and go through the steps!
 
 **Step 4**
-![Image](imageName.png)
+![Image](window.png)
 
 When you see this screen, you are done with your set up. 
 
@@ -84,11 +84,24 @@ Here are some specific useful commands to try:
 1. cd ~
 2. cd
 3. ls -lat
+
+The ls command is a list command. Here, it will list all the contents in the lat directory. 
+![image]()
+
 4. ls -a
+
+Similarly, it will list all the contents in the a directory. 
+![image]()
+
 5. ls <directory> where <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, where the abc is one of the other group members’ username
 6. cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/
 7. cat /home/linux/ieng6/cs15lsp23/public/hello.txt
 
+If there is no such directory, it will show something like: 
+![image]()
+If it is a directory, it will show something like: 
+![image]()
+ 
 ## To disconnect from the remote server, simply type "exit" or "logout" in the terminal.
 
 ---
