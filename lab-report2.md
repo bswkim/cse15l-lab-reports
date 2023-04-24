@@ -1,4 +1,5 @@
 ### This is the code for the StringServer: 
+![StringServer](StringServer.png)
 
 ### /add-message?s=Hello
 ![Hello](helloadd.png)
