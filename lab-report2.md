@@ -1,3 +1,7 @@
+# Lab Report 2
+Brian Kim, 
+A17462905
+
 # Part 1
 
 ### This is the code for the StringServer: 
