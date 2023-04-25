@@ -105,6 +105,8 @@ static List<String> filter(List<String> list, StringChecker sc) {
   }
 ```
 
+# Part 3
 
+> During the second lab, I learned how to connect to the remote server. This was especially valuable to me because this gave me a starting background for backend development. Also, another concept that I found very important was the shortcut control C, which cancels or exits the program that is running. In lab 3, I was able to gain a deeper understanding of the nature of debugging. Although I originally thought that JUnit was a mere test code, I realized that we could use the JUnit tests as a debugging medium by interacting with the tested method back and forth. 
 
 
