@@ -1,3 +1,5 @@
+# Part 1
+
 ### This is the code for the StringServer: 
 ![StringServer](StringServer.png)
 
@@ -31,7 +33,77 @@
 
 > Likewise, the url changes from /add-message?s=Hello to /add-message?s=How%are%you. The space in between words are changed to %. It prints "Hello \n How are you" on the screen. The reason why it prints "Hello \n How are you" instead of just "How are you" is because the message variable already contains the value "Hello" from the previous request. So when the second request is made with the query parameter s=How are you, the handleRequest method concatenates it to the existing message with a newline character \n, resulting in the message "Hello\nHow are you".
 
+# Part 2
 
+1. **Failure Inducing Code**
+
+```
+static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    for(String s: list) {
+      if(sc.checkString(s)) {
+        result.add(0,s);
+      }
+    }
+    return result;
+ }
+```
+
+```
+@Test //Does not pass the test
+public void filterTest() {
+    StringChecker sc = new StringCheck("a");
+    List<String> list = new ArrayList<>();
+    list.add(null);
+    list.add("b");
+    list.add("a");
+    List<String> list2 = new ArrayList<>();
+    list2.add("b");
+    assertEquals(list2, ListExamples.filter(list, sc));
+  }
+```
+
+![symptom](symptom.png)
+
+As shown in the screenshot above, the test results in NullPointerException. This gives error because the add method does not address the case for a null element, therefore the code should be fixed so that it addresses the input. 
+
+2. **Fixed Method**
+
+```
+static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    if (list == null) {
+      return result;
+    }
+    if (sc == null) {
+      return result;
+    }
+    for(String s: list) {
+      if (s == null) {
+        continue;
+      }
+      if(sc.checkString(s)) {
+        result.add(s);
+      }
+    }
+    return result;
+  }
+```
+
+**Now, this would work:**
+```
+@Test //This passes the test
+  public void filterTest() {
+    StringChecker sc = new StringCheck("a");
+    List<String> list = new ArrayList<>();
+    list.add(null);
+    list.add("b");
+    list.add("a");
+    List<String> list2 = new ArrayList<>();
+    list2.add("b");
+    assertEquals(list2, ListExamples.filter(list, sc));
+  }
+```
 
 
 
