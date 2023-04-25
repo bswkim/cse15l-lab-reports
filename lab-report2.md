@@ -65,7 +65,7 @@ public void filterTest() {
 
 ![symptom](symptom.png)
 
-As shown in the screenshot above, the test results in NullPointerException. This gives error because the add method does not address the case for a null element, therefore the code should be fixed so that it addresses the input. 
+As shown in the screenshot above, the test results in NullPointerException. This gives error because the add method does not address the case for a null element, therefore the code should be fixed so that it addresses the input. The fixed method below should work because it checks for elements in the list that are null. It checks if the list itself is null, and if the StringChecker element is null as well. 
 
 2. **Fixed Method**
 
