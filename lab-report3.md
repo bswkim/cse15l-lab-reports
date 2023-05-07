@@ -21,7 +21,7 @@ grep -v "secret" stringsearch-data/technical/government/*
 > Souce: 
 > [stackoverflow link](https://stackoverflow.com/questions/29710366/linux-grep-command). 
 >  For sophistication, I used "man grep". 
-___
+---
 
 ## 2. -l
 ```
@@ -44,7 +44,7 @@ grep -l "fire" ~/stringsearch-data/technical/911report/*.txt
 > Souce: 
 > I used ChatGPT question "give me some options for grep command".
 >  For sophistication, I used "man grep". 
-___
+---
 
 ## 3. -i
 ```
@@ -68,7 +68,7 @@ grep -i "cancer" stringsearch-data/technical/biomed/*.txt
 > Souce: 
 > I used ChatGPT question "give me some options for grep command".
 >  For sophistication, I used "man grep". 
-___
+---
 
 ## 4. -r 
 ```
@@ -91,4 +91,4 @@ grep -r "pattern" ~/stringsearch-data/technical/
 > Souce: 
 > [link](https://stackoverflow.com/questions/1987926/how-do-i-recursively-grep-all-directories-and-subdirectories). 
 >  For sophistication, I used "man grep". 
-___
+---
