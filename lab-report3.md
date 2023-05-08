@@ -1,5 +1,7 @@
 # Lab Report 3 
 
+## GREP COMMAND OPTIONS
+
 ## 1. -v 
 ```
 --invert-match
