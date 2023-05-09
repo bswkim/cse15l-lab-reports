@@ -11,7 +11,7 @@ grep -v "pattern" [file]
 ### This option inverts the matching. That is, it selects all lines that do not match the given pattern.
 ---
 ### Example 1: 
-This will search for all lines that do not contain the word "is" in all text files inside the "plos" folder and print them.
+This will search for all lines that do not contain the word "is" in all text files inside the pmed.0010069.txt file and print them.
 ```
 grep -v "is" technical/plos/pmed.0010069.txt
 
@@ -41,7 +41,7 @@ kmsnoo@gimseon-us-MacBook-Air stringsearch-data % grep -v "is" technical/plos/pm
         
 ```
 ### Example 2: 
-This command will search for all lines in all files under the stringsearch-data/technical/government/ directory that do not contain the word "But".
+This command will search for all lines in the file The_Columbian.txt inside the government/Media dir that do not contain the word "But".
 ```
 grep -v "But" technical/government/Media/The_Columbian.txt
 
@@ -149,9 +149,9 @@ Gleiman_EMASpeech.txt:July 20th Atlanta Journal-Constitution article, there goes
 ```
 
 ### Example 2: 
-This command will search for the word "RNA" case-insensitively in all .txt files under the ~/stringsearch-data/technical/biomed/ directory and display the matching lines. Because it is case-insensitive right now, it searches for words like "Alternatively" and so on.
+This command will search for the word "RNA" case-insensitively in 1471-2199-4-5.txt file and display the matching lines. Because it is case-insensitive right now, it searches for words like "Alternatively" and "RNase". 
 ```
-grep -i "dna" technical/biomed/1471-2199-4-5.txt
+grep -i "rna" technical/biomed/1471-2199-4-5.txt
 
 output: 
 kmsnoo@gimseon-us-MacBook-Air biomed % grep -i "rna" technical/biomed/1471-2199-4-5.txt 
@@ -194,7 +194,7 @@ technical/911report/chapter-6.txt:                recall any specific guidance o
 ```
 
 ### Example 2: 
-This command will search for the word "education program" in all files under the stringsearch-data/technical/ directory, including all subdirectories.
+This command will search for the word "education program" in all files under the stringsearch-data/technical/biomed directory, including all subdirectories.
 ```
 grep -r "education program" technical/biomed
 
