@@ -1,41 +1,45 @@
 # Lab Report 2
-Brian Kim, 
+
+Brian Kim,
 A17462905
 
 # Part 1
 
-### This is the code for the StringServer: 
+### This is the code for the StringServer:
+
 ![StringServer](StringServer.png)
 
 ### /add-message?s=Hello
+
 ![Hello](helloadd.png)
 
-1. **Which methods in your code are called?**
+### Start Method
 
-> When you put /add-message?s=Hello to the URL, the handleRequest method of the Handler class is called.  
+The start method is inside the Server class, and it is called when the website starts, inside the main method. The method in the Server class takes one parameters, port number (int value ranging from 1024 to 49151). The start method prints the localhost url.
 
-2. **What are the relevant arguments to those methods, and the values of any relevant fields of the class?**
+### handleRequest Method
 
-> The relevant argument to this method is the URI object representing the requested URL. The message field of the Handler class is also relevant. 
+The Handler class initiates the message that start as an empty String. Then, the handlerequest method in the Handler class. The method takes the URI as a parameter, and goes through a nested if statements that checks for conditions that determines the message that will be displayed on the website. The message is not replaced even though the query in the url changes, but rather adds the new query to the message.
 
-3. **How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**
+### getQuery and getPath
 
-> First of all, the url changes from merely having localhost with port number to having /add-message?s=Hello. The value of message is changed from "" to "Hello". **It is because..** Inside the handleRequest method, the code checks if the URL path is equal to /add-message. If it is, the query string "s=Hello" is extracted from the URL, and the message field of the Handler class is updated with the new message. If the message field was empty before, it is assigned the value of "Hello". 
+Inside the handleRequest method that is inside the Handler class, getQuery and getPath method is called. The getQuery method is a method inside the URI class that returns the decoded query component of the URI. This means the part that comes after the ?. Likewise, the getPath component also returns the decoded path component of the URI. This means the part that comes from / to ?.
 
 ### /add-message?s=How are you
+
 ![How are you](howareyouadd.png)
 
-1. **Which methods in your code are called?**
+### Start Method
 
-> Similarly, putting /add-message?s=How are you to the URL will call the handleRequest method of the Handler class. 
+Because the localhost server is already running, the start method is not called.
 
-2. **What are the relevant arguments to those methods, and the values of any relevant fields of the class?**
+### handleRequest Method
 
-> The relevant argument to this method is the URI object representing the requested URL. The message field of the Handler class is also relevant. 
+handleRequest method is again called when i add the message How are you. The website displays the string Hello \n How are you because the string message is not replaced, but added on top of the Hellow which existed previously. The handleRequest message takes the updated URI, and by going through nested if statements, it updates the String value message.
 
-3. **How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**
+### getQuery and getPath
 
-> Likewise, the url changes from /add-message?s=Hello to /add-message?s=How%are%you. The space in between words are changed to %. It prints "Hello \n How are you" on the screen. The reason why it prints "Hello \n How are you" instead of just "How are you" is because the message variable already contains the value "Hello" from the previous request. So when the second request is made with the query parameter s=How are you, the handleRequest method concatenates it to the existing message with a newline character \n, resulting in the message "Hello\nHow are you".
+Because the handleRequest method is called, the getQuery and getPath method is also called. Both getQuery and getPath methods are methods inside the URI class that returns a String that contains the query and path. Here, getQuery returns "s=How are you" and getPath returns /add-message.
 
 # Part 2
 
@@ -69,7 +73,7 @@ public void filterTest() {
 
 ![symptom](symptom.png)
 
-As shown in the screenshot above, the test results in NullPointerException. This gives error because the add method does not address the case for a null element, therefore the code should be fixed so that it addresses the input. The fixed method below should work because it checks for elements in the list that are null. It checks if the list itself is null, and if the StringChecker element is null as well. 
+As shown in the screenshot above, the test results in NullPointerException. This gives error because the add method does not address the case for a null element, therefore the code should be fixed so that it addresses the input. The fixed method below should work because it checks for elements in the list that are null. It checks if the list itself is null, and if the StringChecker element is null as well.
 
 2. **Fixed Method**
 
@@ -95,6 +99,7 @@ static List<String> filter(List<String> list, StringChecker sc) {
 ```
 
 **Now, this would work:**
+
 ```
 @Test //This passes the test
   public void filterTest() {
@@ -111,6 +116,4 @@ static List<String> filter(List<String> list, StringChecker sc) {
 
 # Part 3
 
-> During the second lab, I learned how to connect to the remote server. This was especially valuable to me because this gave me a starting background for backend development. Also, another concept that I found very important was the shortcut control C, which cancels or exits the program that is running. In lab 3, I was able to gain a deeper understanding of the nature of debugging. Although I originally thought that JUnit was a mere test code, I realized that we could use the JUnit tests as a debugging medium by interacting with the tested method back and forth. 
-
-
+> During the second lab, I learned how to connect to the remote server. This was especially valuable to me because this gave me a starting background for backend development. Also, another concept that I found very important was the shortcut control C, which cancels or exits the program that is running. In lab 3, I was able to gain a deeper understanding of the nature of debugging. Although I originally thought that JUnit was a mere test code, I realized that we could use the JUnit tests as a debugging medium by interacting with the tested method back and forth.
