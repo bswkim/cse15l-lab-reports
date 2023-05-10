@@ -113,7 +113,7 @@ static List<String> filter(List<String> list, StringChecker sc) {
 ```
 
 **Now, this would work:**
-The fixed code would work because it includes ```null``` checks before accessing elements of the input list or the ```StringChecker``` object. Specifically, it checks if the input is ```null``` and returns an empty list if it is ```null```. In addition, it checks for ```null``` elements in the input list and skips them using the ```continue``` statement, avoiding the ```NullPointerException``` that was previously encountered.  Although not shown in the example test above, the method adds the element to ```index 0``` everytime, which results ```Assertion error``` nonetheless. This is part is also changed so that each element is properly added at the end of the list.   
+The fixed code would work because it includes ```null``` checks before accessing elements of the input list or the ```StringChecker``` object. Specifically, it checks if the input is ```null``` and returns an empty list if it is ```null```. In addition, it checks for ```null``` elements in the input list and skips them using the ```continue``` statement, avoiding the ```NullPointerException``` that was previously encountered.  Although not shown in the example test above, the method adds the element to ```index 0``` everytime, which results ```Assertion error``` nonetheless. This part is also changed so that each element is properly added at the end of the list.   
 
 ```
 @Test //This passes the test
