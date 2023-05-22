@@ -8,7 +8,7 @@ Keys pressed: ```ssh cs15lsp23nv@ieng6.ucsd.edu <enter>``` Then, ```<Password> <
 
 <img src="lab4clone.png" width="700" height="200">
 
-Keys pressed: ```git clone``` after doing that, I pressed ```<command> + <v> ``` which is ```https://github.com/bswkim/lab7-lab4demo-briankim.git <enter>```, the https from my github to copy and paste the repo to the remote account. 
+Keys pressed: ```git clone``` after doing that, I pressed ```<command> + <v>``` which is ```https://github.com/bswkim/lab7-lab4demo-briankim.git <enter>```, the https from my github to copy and paste the repo to the remote account. 
 
 ## Run the tests, demonstrating that they fail
 
@@ -33,7 +33,7 @@ Because I am done changing the error, I pressed ```:wq <enter> ``` to save and e
 ## Run the tests, demonstrating that they now succeed
 
 <img src="lab4run.png" width="500" height="150">
-Now that I am back to the terminal with the error fixed, I run the test by pressing: ```bash test.sh <enter>```. This runs the test, and the result proves that the vim editor change has worked successfully. 
+Now that I am back to the terminal with the error fixed, I run the test by pressing ```bash test.sh <enter>```. This runs the test, and the result proves that the vim editor change has worked successfully. 
 
 ## Commit and push the resulting change to your Github account
 
