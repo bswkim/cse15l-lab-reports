@@ -1,3 +1,6 @@
+#Lab Report 4 
+> Brian Kim, A17462905
+
 ## Log into ieng6 
 
 <img src="lab4login.png" width="500" height="200">
