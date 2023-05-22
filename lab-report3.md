@@ -84,8 +84,12 @@ earned otherwise.
 ---
 > Souce: 
 > [stackoverflow link](https://stackoverflow.com/questions/29710366/linux-grep-command). 
+> I used ChatGPT:
+> 
 > Prompt: "In the command grep, find 4 interesting command-line options or alternate ways to use the command". 
-> Answer: [chatgpt](chatgpt.png)
+> 
+> Answer: <img src="chatgpt.png" width="500" height="300">
+> 
 > For sophistication, I used "man grep". 
 ---
 
@@ -128,8 +132,11 @@ technical/911report/chapter-9.txt
 ---
 > Souce: 
 > I used ChatGPT: 
+> 
 > Prompt: "In the command grep, find 4 interesting command-line options or alternate ways to use the command". 
-> Answer: [chatgpt](chatgpt.png)
+> 
+> Answer: <img src="chatgpt.png" width="500" height="300">
+> 
 >  For sophistication, I used "man grep". 
 ---
 
@@ -166,8 +173,12 @@ kmsnoo@gimseon-us-MacBook-Air biomed % grep -i "rna" technical/biomed/1471-2199-
 
 ---
 > Souce: 
+> Also, I used ChatGPT with
+> 
 > Prompt: "In the command grep, find 4 interesting command-line options or alternate ways to use the command". 
-> Answer: [chatgpt](chatgpt.png)
+> 
+> Answer: <img src="chatgpt.png" width="500" height="300">
+> 
 >  For sophistication, I used "man grep". 
 ---
 
@@ -217,7 +228,11 @@ technical/biomed/1471-2296-3-3.txt:        prevention/education programs and com
 ---
 > Souce: 
 > [link](https://stackoverflow.com/questions/1987926/how-do-i-recursively-grep-all-directories-and-subdirectories). 
+> Also, I used ChatGPT with
+> 
 > Prompt: "In the command grep, find 4 interesting command-line options or alternate ways to use the command". 
-> Answer: [chatgpt](chatgpt.png)
+> 
+> Answer: <img src="chatgpt.png" width="500" height="300">
+> 
 >  For sophistication, I used "man grep". 
 ---
