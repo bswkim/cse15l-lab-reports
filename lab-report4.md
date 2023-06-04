@@ -3,13 +3,13 @@
 
 ## Log into ieng6 
 
-<img src="lab4login.png" width="500" height="200">
+<img src="lab4login2.png" width="500" height="200">
 
 Keys pressed: ```ssh cs15lsp23nv@ieng6.ucsd.edu <enter>``` Then, ```<Password> <enter>``` to login to the remote cs15lsp account using ssh. 
 
 ## Clone your fork of the repository from your Github account
 
-<img src="lab4clone.png" width="700" height="200">
+<img src="lab4clone2.png" width="700" height="200">
 
 Keys pressed: ```git clone``` after doing that, I pressed ```<command> + <v>``` which is ```https://github.com/bswkim/lab7-lab4demo-briankim.git <enter>```, the https from my github to copy and paste the repo to the remote account. 
 
@@ -45,6 +45,6 @@ Now that I am back to the terminal with the error fixed, I run the test by press
 
 ## Commit and push the resulting change to your Github account
 
-<img src="lab4git.png" width="500" height="300">
+<img src="lab4git2.png" width="500" height="300">
 
 With the changed code, I updated the code using git. This was done pressing ```git add . <enter>``` which . at the end means adding all the changes. Then, I commited the added changes using ```git commit -m"success" <enter>```. This commit was then pushed to the github by the key ```git push <enter>```. 
