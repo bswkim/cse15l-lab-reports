@@ -1,7 +1,7 @@
 # Lab Report 4 
 > Brian Kim, A17462905
 
-This is a resubmission file, and the problem with the first submission was that I did not clone the file with ssh. At first, I tried to remove the folder lab7-lab4demo-briankim, but it did not work due to the permission issue. Therefore, on my github, I deleted the fork and created a new fork named lab7-briankim-lab4. So, for the parts that are changed on the second submission, the name of the repo would be changed. However, I still followed the same exact process, so I hope this is not a problem. 
+This is a resubmission file, and the problem with the first submission was that I did not clone the file with ssh. At first, I tried to remove the folder lab7-lab4demo-briankim, but it did not work due to the permission issue. Therefore, on my github, I deleted the fork and created a new fork named lab7-briankim-lab4. So, for the parts that are changed on the second submission, the name of the repo would be changed. However, I still followed the same exact process, so I hope this is too problematic. 
 
 ## Log into ieng6 
 
