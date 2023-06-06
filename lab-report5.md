@@ -67,7 +67,7 @@ Hello,
 
 Thank you very much for your answer! 
 
-<img src="fixed.png"/>
+![image](fixed.png)
 
 Before heading into troubleshooting, as what you advised, I tried to echo each step. As I did that, I noticed that the copying (```cp```) of jar files over to ```grading-area``` was the problem. ```CPATH``` is what the labgrade.sh bash script is trying to compile, and that it is different from copying junit pacakages into the ```grading-area```. I realized that the ```CPATH``` directs to a junit package inside the lib folder, and that is why I was getting error. Inside the ```grading-area``` folder, it was essential to have ```lib``` file, not two separate junit files. So, I changed the the part where it used to be:
 
