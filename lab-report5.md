@@ -8,7 +8,7 @@ A17462905
 ### #286
 
 <img src="2minago.png"/>
-<img src="heart.png"/>
+<img src="Screen Shot 2023-06-05 at 5.23.10 PM.png"/>
 **What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?**
 
 - VSCode, Google Chrome, MacOS operating system
