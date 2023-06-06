@@ -9,6 +9,7 @@ A17462905
 
 <img src="2minago.png"/>
 <img src="Screen Shot 2023-06-05 at 5.23.10 PM.png"/>
+
 **What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?**
 
 - VSCode, Google Chrome, MacOS operating system
@@ -45,7 +46,7 @@ _________________
 
 # TA's answer: 
 
-<img src="answer.png"/>
+<img height=100 width=167 src="answer.png"/>
 
 Hi there,
 
@@ -56,5 +57,27 @@ Thank you for providing detailed context about the issue you're facing. Let's tr
 
 Also, to troubleshoot more effectively, try considering ```echo```ing for each steps. 
 
+_________________
 
+# Student Response: 
+
+<img src="2minago.png"/>
+
+Hello, 
+
+Thank you very much for your answer! 
+
+<img width=500 height=300 src="fixed.png"/>
+
+Before heading into troubleshooting, as what you advised, I tried to echo each step. As I did that, I noticed that the copying (```cp```) of jar files over to grading-area was the problem. CPATH is what the labgrade.sh bash script is trying to compile, and that it is different from copying junit pacakages into the grading-area. I realized that the CPATH directs to a junit package inside the lib folder, and that is why I was getting error. Inside the ```grading-area``` folder, it was essential to have ```lib``` file, not two separate junit files. 
+
+Here is the command that I tried on the terminal to check if it is working correctly: 
+```bash labgrade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected```
+
+And this was the output:
+<img src="correctoutput.png"/>
+
+Thank you for the help!
+
+<p>Reply ...</p>
 
