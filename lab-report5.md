@@ -1,5 +1,14 @@
-<img src="helpbar.png"/>
-<img src="writebar.png"/>
+# Lab Report 5
+Brian Kim
+A17462905
+
+# Student Question: 
+
+## Help with Error: Junit does not exist 
+### #286
+
+<img src="2minago.png"/>
+<img src="heart.png">
 **What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?**
 
 - VSCode, Google Chrome, MacOS operating system
@@ -31,4 +40,21 @@ The command that I used was:
 ```bash labgrade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected```
 
 I don't think it's a problem with student submission as well, because this student submission should pass. 
-          
+
+_________________
+
+# TA's answer: 
+
+<img src="answer.png"/>
+
+Hi there,
+
+Thank you for providing detailed context about the issue you're facing. Let's try to troubleshoot the problem together. Based on the information you've provided, here are few questions to help pinpoint the cause:
+
+1. What exactly is your labgrade.sh trying to compile? It could be found under your comment: ```#Run the tests and report the grade based on the JUnit output.``` 
+2. Does that align with what you are copying to the grading-area?
+
+Also, to troubleshoot more effectively, try considering ```echo```ing for each steps. 
+
+
+
