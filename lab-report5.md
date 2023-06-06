@@ -8,7 +8,7 @@ A17462905
 ### #286
 
 <img src="2minago.png"/>
-<img src="heart.png">
+<img src="heart.png"/>
 **What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?**
 
 - VSCode, Google Chrome, MacOS operating system
