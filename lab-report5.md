@@ -94,3 +94,9 @@ Thanks!
 
 <p>Reply ...</p>
 
+# Reflection
+
+While having to learn a lot of concepts, learning about Vim has been one of the most helpful experience. Initially, I was skeptical, but I later realized its usefulness in lab 7. Modal editing, though was challenging to memorize, proved to be a useful workflow, as sometimes we have to complete simple works through terminal. Because it works regardless of any operating system, it is efficient in work situations. Another practice that I found very useful in writing bash script was putting ```echo``` commands in use while writing. This was a great way to troubleshoot as it shows parts that are going well, and parts that are not going so well. 
+
+
+
